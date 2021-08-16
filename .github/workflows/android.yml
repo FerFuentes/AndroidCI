@@ -28,6 +28,6 @@ jobs:
     - name: Releasing using Hub
       uses: FerFuentes/AndroidCI/action-release-debug@main
       env:
-       GITHUB_TOKEN: ${{ secrets.TOKEN }}
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        APP_FOLDER: app
        RELEASE_TITLE: New Build

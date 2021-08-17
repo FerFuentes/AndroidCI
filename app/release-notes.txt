@@ -1,0 +1,5 @@
+Android CI
+
+Release notes:
+
+    - Added new Firebase Integration

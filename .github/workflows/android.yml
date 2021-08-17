@@ -35,4 +35,5 @@ jobs:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: testers
+          releaseNotesFile: app/release-notes.txt
           file: app/build/outputs/apk/release/app-release-unsigned.apk

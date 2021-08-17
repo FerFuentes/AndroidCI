@@ -31,5 +31,3 @@ jobs:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        APP_FOLDER: app
        RELEASE_TITLE: New Build
-      with:
-        args: ${{ github.sha }}

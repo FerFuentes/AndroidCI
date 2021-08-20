@@ -3,8 +3,8 @@
 ---
 * [Introduction](#Introduction)
 * [Setup Git Workflow](#Setup-GitHub-Actions)
-    * [Add Github Folder](#1.-Add-github-folder)
-    * [Add Github Actions](#2.-Add-Actions)
+    * [Add Github Folder](#Add-github-folder)
+    * [Add Github Actions](#Add-Actions)
 
 ## Introduction
 
@@ -14,9 +14,9 @@ In this project just want to upload .apk to github artifacts and send it to Fire
 
 ## Setup GitHub Actions
 
-### 1. Add github folder
+### Add github folder
 
-First need to add a .github inside of root folder, example: AndroidCI/.github/<filename>.yml in this case the android.yml file on this proyect AndroidCI
+First we need to add a .github folder inside of root proyect (AndroidCI/.github), then create a .yml file (android.yml) you can use with any name to make a references of the action do you want to implement
 
 ```bash
 
@@ -29,7 +29,7 @@ First need to add a .github inside of root folder, example: AndroidCI/.github/<f
 
 ```
 
-### 2. Add Actions
+### Add Actions
 
 GitHub Actions help you automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred. For example, every time someone creates a pull request for a repository, you can automatically run a command that executes a software testing script.
 

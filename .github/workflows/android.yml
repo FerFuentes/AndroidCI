@@ -45,6 +45,6 @@ jobs:
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
           releaseNotes: app/release-notes.txt
-          file: app/build/outputs/apk/release/app-release-unsigned.apk
+          file: app/build/outputs/apk/debug/app-debug.apk
           notifyTesters: true
           debug: false

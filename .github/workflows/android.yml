@@ -29,7 +29,7 @@ jobs:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
 
-      - name: Firebase App Distribution
+      - name: Upload artefact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
@@ -38,13 +38,12 @@ jobs:
           releaseNotesFile: app/release-notes.txt
           file: app/build/outputs/apk/release/app-release-unsigned.apk
 
-      - name: App Center Distribute
+      - name: Upload artefact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
           appName: FerFuentes/AndroidCI
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
-          releaseNotes: app/release-notes.txt
-          file: app/build/outputs/apk/debug/app-debug.apk
+          file: app/build/outputs/apk/release/app-release-unsigned.apk
           notifyTesters: true
           debug: false

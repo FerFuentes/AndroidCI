@@ -41,7 +41,7 @@ jobs:
       - name: App Center Distribute
         uses: devussy/AppCenter-Distribute-Github-Action@v1.0.5
         with:
-          app: devussy/SampleApp
+          app: FerFuentes/AndroidCI
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
           releaseNotes: app/release-notes.txt

@@ -46,4 +46,4 @@ jobs:
           group: Testers
           file: app/build/outputs/apk/release/app-release-unsigned.apk
           notifyTesters: true
-          debug: false
+          debug: true

@@ -41,7 +41,7 @@ jobs:
       - name: App Center Distribute
         uses: wzieba/AppCenter-Github-Action@v1
         with:
-          appName: FerFuentes/AndroidCI-App
+          appName: AndroidCI
           token: ${{secrets.APP_CENTER_TOKEN}}
           group: Testers
           releaseNotes: app/release-notes.txt
